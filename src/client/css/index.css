@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Josefin+Sans&display=swap");
+html, body {
+  background-image: linear-gradient(#000015, #000040);
+  height: 200vh;
+}
+
+.nav {
+  padding: 50px 0;
+  display: flex;
+  font-family: 'Comfortaa', cursive;
+}
+
+.nav .space {
+  width: 60%;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.nav .container .tab {
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav .container .tab a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav .container .tab:hover {
+  background-color: #333;
+}
+
+.header {
+  font-size: 50px;
+  color: #fff;
+}
+
+.header p {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+.subheader {
+  font-size: 25px;
+  color: #fff;
+}
+
+.subheader p {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+
+.lightbox .bg {
+  position: fixed;
+  width: 100%;
+  height: 200vh;
+  opacity: 0.8;
+  background-color: #000;
+}
+
+.lightbox .palette {
+  position: fixed;
+  background-color: #000015;
+  width: 80%;
+  padding: 100px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.lightbox .palette .image {
+  width: 35%;
+}
+
+.lightbox .palette .image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.lightbox .palette .texts {
+  color: #fff;
+  padding: 0 50px;
+  width: 50%;
+  font-family: 'Comfortaa', cursive;
+}
+
+.lightbox .palette .texts .title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 35px;
+  padding: 20px 0;
+}
+
+.lightbox .palette .texts .description {
+  padding: 20px 0;
+}
+
+.lightbox .palette .texts .lower {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blue-btn {
+  background-color: #000072;
+  color: #fff;
+  padding: 20px 30px;
+  font-size: 20px;
+  border: #000072;
+  cursor: pointer;
+}
+
+.main-canvas {
+  height: 100vh;
+  display: flex;
+}
+
+.main-canvas .left {
+  width: 60%;
+}
+
+.main-canvas .left .texts {
+  font-family: 'Comfortaa', cursive;
+  width: 80%;
+  color: #fff;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.main-canvas .left .texts .small-texts {
+  font-size: 25px;
+}
+
+.main-canvas .left .texts .big-texts {
+  margin-top: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 60px;
+}
+
+.main-canvas .left .texts .profession {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.main-canvas .left .buttons {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.main-canvas .left .buttons span {
+  font-family: 'Comfortaa', cursive;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.main-canvas .right {
+  width: 40%;
+}
+
+.main-canvas .right .profile-pic {
+  width: 30%;
+  margin: auto;
+}
+
+.main-canvas .right .profile-pic img {
+  width: 100%;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: 200px;
+  cursor: pointer;
+}
+
+.skills {
+  height: 100vh;
+}
+
+.skills .skillset {
+  width: 70%;
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills .skillset .each-skill {
+  cursor: pointer;
+  transition: 1s;
+  padding: 20px 20px 0px 20px;
+  border-radius: 15px;
+  border: 1px solid #333;
+  color: #fff;
+  font-family: 'Comfortaa', cursive;
+  width: 20%;
+}
+
+.skills .skillset .each-skill .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills .skillset .each-skill .top .title {
+  display: flex;
+}
+
+.skills .skillset .each-skill .top .title .logo {
+  width: 15%;
+  padding: 0 10px;
+}
+
+.skills .skillset .each-skill .top .title .logo img {
+  transition: 0.5s;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.skills .skillset .each-skill .top .title .name {
+  margin-top: 5px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.skills .skillset .each-skill .bottom {
+  padding: 20px 0;
+}
+
+.skills .skillset .each-skill .bottom input[type='range'] {
+  -webkit-appearance: none;
+  background-color: #ddd;
+  height: 5px;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.skills .skillset .each-skill .bottom input[type='range']:focus {
+  outline: none;
+}
+
+.skills .skillset .each-skill .bottom input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 20px;
+}
+
+.skills .skillset .each-skill .bottom input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: red;
+  border-radius: 50%;
+  box-shadow: -210px 0 0 200px red;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border: 0;
+}
+
+.skills .skillset .each-skill .bottom input[type='range']::-moz-range-thumb {
+  background: #333;
+  border-radius: 50%;
+  box-shadow: -1010px 0 0 1000px #666;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border: 0;
+}
+
+.skills .skillset .each-skill .bottom input[type="range"]::-moz-range-track {
+  background-color: #ddd;
+}
+
+.skills .skillset .each-skill .bottom input[type="range"]::-moz-range-progress {
+  background-color: #666;
+  height: 20px;
+}
+
+.skills .skillset .each-skill .bottom input[type="range"]::-ms-fill-upper {
+  background-color: #ddd;
+}
+
+.skills .skillset .each-skill .bottom input[type="range"]::-ms-fill-lower {
+  background-color: #666;
+}
+
+.skills .skillset .each-skill:hover {
+  transform: scale(1.1);
+  border: 1px solid #fff;
+  box-shadow: 7px 0 7px #fff;
+}
+
+.skills .skillset .each-skill:hover img {
+  transform: scale(1.2);
+}
+
+.projects {
+  height: 100vh;
+}
+
+.projects .each-project-row {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.projects .each-project-row .each-project {
+  width: 47.5%;
+}
+
+.projects .each-project-row .each-project .image {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.projects .each-project-row .each-project .image img {
+  width: 100%;
+  transition: 1s;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.projects .each-project-row .each-project .title {
+  font-family: 'Comfortaa', cursive;
+  font-size: 25px;
+  color: #fff;
+  width: 90%;
+  margin: auto;
+}
+
+.projects .each-project-row .each-project .title p {
+  text-align: right;
+}

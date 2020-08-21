@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Josefin+Sans&display=swap');
+html, body {
+  // #000015
+  background-image: linear-gradient(#000015,#000040);
+  height: 200vh;
+}
+.nav {
+  padding: 50px 0;
+  display: flex;
+  font-family: 'Comfortaa', cursive;
+  .space {
+    width: 60%;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    .tab {
+      padding: 15px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: 0.5s;
+      a {
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .tab:hover {
+      background-color: #333;
+    }
+  }
+}
+
+.header {
+  font-size: 50px;
+  // padding: 20px;
+  color: #fff;
+  p {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+  }
+}
+.subheader {
+  font-size: 25px;
+  color: #fff;
+  p {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+  }
+}
+
+.lightbox {
+  .bg {
+    position: fixed;
+    width: 100%;
+    height: 200vh;
+    opacity: 0.8;
+    background-color: #000;
+    // border: 1px solid red;
+  }
+  .palette {
+    position: fixed;
+    background-color: #000015;
+    width: 80%;
+    padding: 100px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    .image {
+      width: 35%;
+      img {
+        width: 100%;
+        border-radius: 15px;
+      }
+    }
+    .texts {
+      color: #fff;
+      padding: 0 50px;
+      width: 50%;
+      font-family: 'Comfortaa', cursive;
+      .title {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 35px;
+        padding: 20px 0;
+      }
+      .description {
+        padding: 20px 0;
+      }
+      .lower {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+.blue-btn {
+  background-color: #000072;
+  color: #fff;
+  padding: 20px 30px;
+  font-size: 20px;
+  border: #000072;
+  cursor: pointer;
+}
+
+    .main-canvas {
+      height: 100vh;
+      display: flex;
+      .left {
+        width: 60%;
+        .texts {
+          font-family: 'Comfortaa', cursive;
+          width: 80%;
+          color: #fff;
+          margin: auto;
+          margin-top: 150px;
+          .small-texts {
+            font-size: 25px;
+          }
+          .big-texts {
+            margin-top: 30px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 60px;
+          }
+          .profession {
+            margin-top: 20px;
+            font-size: 20px;
+          }
+        }
+
+        .buttons {
+          display: flex;
+          width: 80%;
+          margin: auto;
+          margin-top: 20px;
+          span {
+            font-family: 'Comfortaa', cursive;
+            color: #fff;
+            padding: 20px;
+            font-size: 18px;
+          }
+        }
+      }
+      .right {
+        width: 40%;
+        .profile-pic {
+          width: 30%;
+          margin: auto;
+          img {
+            width: 100%;
+            margin: auto;
+            border-radius: 50%;
+            margin-top: 200px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    // Skills
+    .skills {
+      height: 100vh;
+
+      .skillset {
+        width: 70%;
+        margin: auto;
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        .each-skill {
+          cursor: pointer;
+          transition: 1s;
+          padding: 20px 20px 0px 20px;
+          border-radius: 15px;
+          border: 1px solid #333;
+          color: #fff;
+          font-family: 'Comfortaa', cursive;
+          width: 20%;
+          .top {
+            display: flex;
+            justify-content: space-between;
+            .title {
+              display: flex;
+              .logo {
+                width: 15%;
+                padding: 0 10px;
+                img {
+                  transition: 0.5s;
+                  width: 100%;
+                  border-radius: 50%;
+                }
+              }
+              .name {
+                margin-top: 5px;
+                font-size: 18px;
+                white-space: nowrap;
+              }
+            }
+          }
+          .bottom {
+            padding: 20px 0;
+            input[type='range'] {
+              -webkit-appearance: none;
+              background-color: #ddd;
+              height: 5px;
+              overflow: hidden;
+              width: 100%;
+              border-radius: 20px;
+            }
+            input[type='range']:focus {
+              outline: none;
+            }
+            
+            input[type='range']::-webkit-slider-runnable-track {
+              -webkit-appearance: none;
+              height: 20px;
+            }
+            
+            input[type='range']::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              background: red;
+              border-radius: 50%;
+              box-shadow: -210px 0 0 200px red;
+              cursor: pointer;
+              height: 20px;
+              width: 20px;
+              border: 0;
+            }
+            
+            input[type='range']::-moz-range-thumb {
+              background: #333;
+              border-radius: 50%;
+              box-shadow: -1010px 0 0 1000px #666;
+              cursor: pointer;
+              height: 20px;
+              width: 20px;
+              border: 0;
+            }
+            
+            input[type="range"]::-moz-range-track {
+              background-color: #ddd;
+            }
+            input[type="range"]::-moz-range-progress {
+              background-color: #666;
+              height: 20px
+            }
+            input[type="range"]::-ms-fill-upper {
+              background-color: #ddd;
+            }
+            input[type="range"]::-ms-fill-lower {
+              background-color: #666;
+            }
+          }
+        }
+
+        .each-skill:hover {
+          img {
+            transform: scale(1.2);
+          }
+          transform: scale(1.1);
+          border: 1px solid #fff;
+          box-shadow: 7px 0 7px #fff;
+        }
+      }
+    }
+
+    // Projects
+    .projects {
+      height: 100vh;
+      .each-project-row {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        .each-project {
+          width: 47.5%;
+          .image {
+            overflow: hidden;
+            border-radius: 20px;
+            img {
+              width: 100%;
+              transition: 1s;
+              border-radius: 20px;
+              cursor: pointer;
+            }
+          }
+          .title {
+            font-family: 'Comfortaa', cursive;
+            font-size: 25px;
+            color: #fff;
+            width: 90%;
+            margin: auto;
+            p {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  
