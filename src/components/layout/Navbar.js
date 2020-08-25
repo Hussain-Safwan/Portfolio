@@ -71,6 +71,8 @@ const Navbar = () => {
                       <p><Link style={{textDecoration: 'none', color: '#fff'}} to='/'>Home</Link></p>
                       <p><Link style={{textDecoration: 'none', color: '#fff'}} to='/about'>About</Link></p>
                       <p><Link style={{textDecoration: 'none', color: '#fff'}} to='/skills'>Skills</Link></p>
+                      <p><Link style={{textDecoration: 'none', color: '#fff'}} to='/pojects'>About</Link></p>
+                      <p><Link style={{textDecoration: 'none', color: '#fff'}} to='/contacts'>Skills</Link></p>
                     </div>
           ) : <div></div>
         }
