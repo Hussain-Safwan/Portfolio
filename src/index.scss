@@ -40,6 +40,10 @@ html, body {
   background-color: #07074d;
   padding: 20px 0;
   width: 100%;
+  display: none;
+  @media (max-width: 900px) {
+    display: block;
+  }
   .container {
     background-color: #07074d;
     p {

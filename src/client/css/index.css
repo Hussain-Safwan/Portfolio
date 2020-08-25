@@ -48,6 +48,13 @@ html, body {
   background-color: #07074d;
   padding: 20px 0;
   width: 100%;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .mobile-nav {
+    display: block;
+  }
 }
 
 .mobile-nav .container {
