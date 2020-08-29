@@ -67,7 +67,7 @@ const Navbar = () => {
       <IoMdList style={iconStyle} onClick={openNav} />
         {
           open ? (
-            <div className='container'>
+            <div className='container' onClick={() => {setOpen(!open)}}>
                       <p><Link style={{textDecoration: 'none', color: '#fff'}} to='/'>Home</Link></p>
                       <p><Link style={{textDecoration: 'none', color: '#fff'}} to='/about'>About</Link></p>
                       <p><Link style={{textDecoration: 'none', color: '#fff'}} to='/skills'>Skills</Link></p>

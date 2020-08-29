@@ -21,6 +21,9 @@ useEffect(() => {
   return (
     <div>
       <div class="main-canvas">
+              <div className='mobile-img'>
+                <img src={me} />
+              </div>
               <div class="left">
                   <div class="texts">
                     <div class="small-text" id='small-text'></div>
