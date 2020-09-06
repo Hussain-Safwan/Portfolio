@@ -21,8 +21,12 @@ const Projects = () => {
     setProjectID(e.target.id)
     setInProp(true)
   }
+
+  const closeModal = () => {
+    setOpener(false)
+  }
   return (
-    <div>
+    <div >
       
       <div class="projects">
           <div class="header"><p>Projects</p></div>
@@ -78,7 +82,7 @@ const Projects = () => {
         </div>
 
         {
-        opener ? <Lightbox id={projectID} />: <div></div>
+        opener ? <Lightbox id={projectID} closeModal={closeModal} />: <div></div>
       }
 
     </div>

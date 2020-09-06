@@ -2,6 +2,7 @@
 html, body {
   // #000015
   background-image: linear-gradient(#000015,#000040);
+  background-size: contain;
   height: 200vh;
 }
 .nav {
@@ -172,8 +173,19 @@ html, body {
     margin: auto;
     border-radius: 25px;
     transition: 1s;
+    padding: 25px 0;
     @media (max-width: 900px) {
       width: 85%;
+    }
+  }
+  .image {
+    border-radius: 50%;
+    width: 25%;
+    margin: auto;
+    padding: 25px 0;
+    img {
+      width: 100%;
+      border-radius:  0% 0% 135% 135% / 0% 0% 185% 185% ;
     }
   }
   .about-header {
@@ -500,9 +512,10 @@ html, body {
     .container {
       width: 70%;
       margin: auto;
+      @media (max-width: 900px) {
+        width: 80%;
+      }
       .box {
-        display: flex;
-        justify-content: space-between;
         @media (max-width: 900px) {
           flex-direction: column;
         }
@@ -518,17 +531,19 @@ html, body {
           }
         }
         .left {
-          width: 45%;
           @media (max-width: 900px) {
-            width: 90%;
+            width: 100%;
             margin: auto;
           }
           .icons {
             display: flex;
             justify-content: space-evenly;
+            width: 50%;
+            margin: auto;
             padding: 25px 15px;
             @media (max-width: 900px) {
               padding: 10px;
+              width: 100%;
             }
           }
           .icon-texts {
@@ -555,16 +570,18 @@ html, body {
           }
         }
         .right {
-          width: 45%;
           @media (max-width: 900px) {
             width: 90%;
             margin: auto;
             margin-top: 30px;
           }
           .msg-area {
+            width: 50%;
+            margin: auto;
             margin-top: 50px;
             @media (max-width: 900px) {
               margin-top: 10px;
+              width: 100%;
             }
             .inputs {
               display: flex;
@@ -578,6 +595,7 @@ html, body {
                 border: 1px solid #000045;
                 background-color: #000045;
                 transition: 0.5s;
+                width: 45%;
                 @media (max-width: 900px) {
                   margin-top: 15px;
                   width: 100%;
@@ -591,7 +609,7 @@ html, body {
             }
             textarea {
               font-family: 'Comfortaa', cursive;
-              width: 100%;
+              width: 93%;
               margin-top: 20px;
               background-color: #000045;
               border: 1px solid #000045;
@@ -603,6 +621,12 @@ html, body {
               outline: none;
               color: #fff;
               background-color: #4f4fe4;
+            }
+            p {
+              text-align: right;
+              @media (max-width: 900px) {
+                text-align: center;
+              }
             }
           }
         }

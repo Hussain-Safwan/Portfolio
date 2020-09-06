@@ -60,7 +60,7 @@ useEffect(() => {
                             <div class="buttons">
                               <button class="blue-btn" id='hire-me'>Hire Me!</button> 
                               <span>or</span>
-                              <button class="blue-btn" id="know-more">Know More</button>
+                              <button class="blue-btn" id="know-more" onClick={() => {window.open('/about')}}>Know More</button>
                             </div>
                           </div>
                         )
@@ -81,3 +81,23 @@ useEffect(() => {
 }
 
 export default MainCanvas
+
+/*
+
+The key fingerprint is:
+SHA256:13i5lgB5WtwytaIV9YzpzEHDI4i436UsG4Z2BycHhXw mah-nigga@mahnigga-Swift-SF315-51
+The key's randomart image is:
++---[RSA 2048]----+
+|     o +...o=    |
+|    . = Eo.=oB   |
+|     . oo O.*.o  |
+|    . o oB.X o   |
+|     o BSo+ B    |
+|    o * =. o o   |
+|   . o =    +    |
+|      .    .     |
+|                 |
++----[SHA256]-----+
+
+
+*/

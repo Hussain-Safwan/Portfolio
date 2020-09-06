@@ -22,34 +22,23 @@ const Contact = () => {
           <div class="header"><p>Reach out to me</p></div>
           <div className='box'>
             <div className='left'>
-              <div className='head'><p>I'M SOCIAL</p></div>
               <div className='icons'>
-                  <FaFacebook style={iconStyle} />
-                  <FaGithub style={iconStyle} />
-                  <FaLinkedin style={iconStyle} />
-                  <IoLogoSkype style={iconStyle} />
+                <IoIosMail onClick={() => { window.open('mailto:safwan.du16@gmail.com', '_blank') }} style={iconStyle} title='Email: safwan.du16@gmail.com' />
+                  <FaFacebook onClick={() => { window.open('https://www.facebook.com/hussain.safwan/', '_blank') }} style={iconStyle} />
+                  <FaGithub onClick={() => { window.open('https://github.com/Hussain-Safwan', '_blank') }} style={iconStyle} />
+                  <FaLinkedin onClick={() => { window.open('https://www.linkedin.com/in/hussain-md-safwan-649414138/', '_blank') }}  style={iconStyle} />
+                  <IoLogoSkype onClick={() => { window.open('https://join.skype.com/invite/Uvk0glSwHJng', '_blank') }} style={iconStyle} />
               </div>
-              <div className='head' style={{marginTop: '50px'}}><p>AND ALSO ON OTHER MEDIAS</p></div>
-              <div className='icon-texts'>
-                  <div className='each'>
-                      <IoIosMail style={iconStyle} /> <span>safwan.du16@gmail.com</span>
-                  </div>
-                  <div className='each'>
-                      <IoIosPhonePortrait style={iconStyle} /> <span>01778164366</span>
-                  </div>
-                  <div className='each'>
-                      <FaBuilding style={iconStyle} /> <span>Dhaka, Bangladesh</span>
-                  </div>
-              </div>
+              
             </div>
             <div className='right'>
-              <div className='head'><p>BUT MOSTLY ENJOY LETTERS</p></div>
               <div className='msg-area'>
                 <div className='inputs'>
                   <input type='text'  placeholder='Your name'/>
                   <input type='text' placeholder='Your email'/>
                 </div>
                 <textarea placeholder='Your precious message' />
+                <p><button class='blue-btn'>Send</button></p>
               </div>
             </div>
           </div>
