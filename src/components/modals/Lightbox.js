@@ -34,7 +34,7 @@ const Lightbox = (props) => {
               </div>
               <div class="texts">
               <div className='top' style={{display: 'flex', justifyContent: 'space-between'}}>
-                  <div class="title"> { projects[id].title } </div>
+                  <div class="title"> { projects[id].title } <br /> <span onClick={() => { window.open(projects[id].link) }} style={{color: 'blue', fontSize: '12px', cursor: 'pointer'}}>{ projects[id].link }</span> </div>
                   <MdClose style={{fontSize: '30px', color: '#fff', cursor: 'pointer'}} onClick={Close}/>
               </div>
                 <div class="description"> { projects[id].description } </div>
