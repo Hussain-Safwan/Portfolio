@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import './client/css/index.css'
 
+import Autocomplete from 'Autocomplete'
 import Navbar from './components/layout/Navbar'
 import MainCanvas from './components/layout/MainCanvas'
 import About from './components/layout/About'
